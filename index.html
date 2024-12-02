@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KALKULATOR JODOH</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="intro-section">
+      <div class="KALK-1">
+        <img class="lov-img" src="LOV.jpg" alt="" />
+        <h1 class="h1-cal">KALKULATOR </h1>
+        <h1 class="h1-jod">JODOH</h1>
+      </div>
+      <button class="Mulai-btn" id="start-button">MULAI</button>
+    </div>
+
+    <div id="form-section" style="display: none">
+      <form id="love-form">
+        <img class="lov-img" src="LOV.jpg" alt="" />
+        <h1 class="h1-cal">KALKULATOR</h1>
+        <h1 class="h1-jod">JODOH</h1>
+        <label for="your-name">NAMA KAMU:</label>
+        <input type="text" id="your-name" required />
+        <br /><br />
+        <label for="partner-name">NAMA PASANGAN KAMU:</label>
+        <input type="text" id="partner-name" required />
+        <br /><br />
+        <button type="button" id="calculate-button">HITUNG KECOCOKAN</button>
+      </form>
+    </div>
+
+    <div id="result-section" style="display: none; text-align: center; margin-top: 20px;">
+        <h1 id="compatibility-title">Kecocokan</h1>
+        <h2 id="compatibility-description"></h2>
+        <p id="compatibility-message"></p>  <!-- Menampilkan pesan tentang kecocokan -->
+        
+        <h3>Presentase Kecocokan</h3>
+        <p id="compatibility-percentage"></p>
+      
+        <button id="reset-button">Hitung Ulang</button>
+      </div>
+      
+  </body>
+  <script src="script.js"></script>
+</html>
